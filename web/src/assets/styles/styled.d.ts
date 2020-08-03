@@ -5,10 +5,17 @@ declare module "styled-components" {
     title: string;
     colors: {
       primary: string;
+      primaryLighter: string;
+      primaryLight: string;
+      primaryDarker: string;
       secondary: string;
-      text: string;
+      secondaryDark: string;
+      secondaryDarker: string;
+      textBase: string;
+      textInPrimary: string;
       textTitle: string;
       background: string;
+      white: string;
     };
     fontSizes: {
       default: string;

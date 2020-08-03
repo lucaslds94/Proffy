@@ -2,10 +2,17 @@ export default {
   title: "light",
   colors: {
     primary: "#8257E5",
+    primaryLighter: "#9871F5",
+    primaryLight: "#916BEA",
+    primaryDarker: "#6842C2",
     secondary: "#04D361",
+    secondaryDark: "#04BF58",
+    secondaryDarker: "#04BF58",
     textTitle: "#32264D",
-    text: "#6A6180",
+    textInPrimary: "#D4C2FF",
+    textBase: "#6A6180",
     background: "#F0F0F7",
+    white:"#FFF"
   },
   fontSizes: {
     default: "1.4rem",

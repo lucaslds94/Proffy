@@ -8,7 +8,7 @@ export default createGlobalStyle`
     outline: 0;
   }
   html {
-    font-size: 62.5%; 
+    font-size: 60%; 
     height: 100%;
   }
   body {
@@ -21,9 +21,12 @@ export default createGlobalStyle`
   body, #root {
     min-height: 100vh;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
   }
-  body, input, button {
-    font: 1.6rem Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  body, input, button, textarea {
+    font: 500 1.6rem Poppins, Archivo, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.48;
   }
   h1, h2, h3, h4, h5, h6, strong {
@@ -44,5 +47,11 @@ export default createGlobalStyle`
     list-style: none;
     text-align: left;
     padding: 0;
+  }
+
+  @media (min-width: 700px) {
+    :root {
+      font-size: 62.5%
+    }
   }
 `;
