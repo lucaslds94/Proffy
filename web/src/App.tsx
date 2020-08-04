@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 
-import Landing from "./pages/Landing";
+import Routes from "./routes";
 
 import light from "./assets/styles/themes/light";
 import GlobalStyle from "./assets/styles/global";
@@ -9,7 +9,7 @@ import GlobalStyle from "./assets/styles/global";
 function App() {
   return (
     <ThemeProvider theme={light}>
-      <Landing />
+      <Routes />
       <GlobalStyle />
     </ThemeProvider>
   );

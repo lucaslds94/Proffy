@@ -63,13 +63,19 @@ export const LogoContainer = styled.div`
 `;
 
 export const HeroImg = styled.div`
+  display: flex;
+  place-content: center;
   img {
-    width: 100%;
+    width: 90%;
   }
 
   @media (min-width: 1100px) {
     grid-area: hero;
     justify-self: end;
+
+    img {
+      width: 100%;
+    }
   }
 `;
 
@@ -125,6 +131,7 @@ export const ButtonsContainer = styled.div`
 
     a {
       font-size: 2.4rem;
+      height: 10rem;
     }
   }
 `;
