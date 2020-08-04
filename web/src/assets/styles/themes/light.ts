@@ -12,7 +12,10 @@ export default {
     textInPrimary: "#D4C2FF",
     textBase: "#6A6180",
     background: "#F0F0F7",
-    white:"#FFF"
+    backgroundDarker:"#FFF",
+    backgroundHeader: "#8257E5",
+    white:"#FFF",
+    
   },
   fontSizes: {
     default: "1.4rem",

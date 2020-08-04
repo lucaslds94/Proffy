@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.article`
-  background: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.colors.backgroundDarker};
   border: 1px solid #e6e6f0;
   border-radius: 0.8rem;
   margin-top: 1rem;
@@ -70,7 +70,7 @@ export const TeacherItemHeader = styled.header`
 
 export const Footer = styled.footer`
   padding: 3.2rem 2rem;
-  background: #fafafc;
+  background: ${({theme}) => theme.colors.backgroundDarker};
   border-top: 1px solid #e6e6f0;
   margin-top: 3.2rem;
   display: flex;
@@ -78,7 +78,7 @@ export const Footer = styled.footer`
   justify-content: space-between;
 
   p strong {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.textTitle};
     font-size: 1.6rem;
     display: block;
   }

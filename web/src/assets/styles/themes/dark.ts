@@ -8,10 +8,12 @@ export default {
     secondary: "#04D361",
     secondaryDark: "#04BF58",
     secondaryDarker: "#04BF58",
-    textTitle: "#32264D",
+    textTitle: "#F0F0F0",
     textInPrimary: "#D4C2FF",
     textBase: "#6A6180",
     background: "#333",
+    backgroundDarker:"#222",
+    backgroundHeader: "#222",
     white: "#FFF",
   },
   fontSizes: {

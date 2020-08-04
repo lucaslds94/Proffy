@@ -15,6 +15,8 @@ declare module "styled-components" {
       textInPrimary: string;
       textTitle: string;
       background: string;
+      backgroundDarker: string;
+      backgroundHeader: string;
       white: string;
     };
     fontSizes: {

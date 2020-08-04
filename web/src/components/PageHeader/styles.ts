@@ -5,7 +5,7 @@ export const Container = styled.header`
   flex-direction: column;
   width:100vw;
 
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.backgroundHeader};
 
   @media (min-width: 700px) {
     height: 340px;
