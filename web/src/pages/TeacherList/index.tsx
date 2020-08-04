@@ -8,7 +8,7 @@ import { Container, SearchTeachers, InputBlock, Main } from "./styles";
 const TeacherList: React.FC = () => {
   return (
     <Container>
-      <PageHeader title="Estes sãos os proffys disponíveis.">
+      <PageHeader title="Estes são os proffys disponíveis.">
         <SearchTeachers>
           <InputBlock>
             <label htmlFor="subject">Disciplina</label>
