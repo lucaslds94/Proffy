@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import Switch from "react-switch";
 
 import {
   Container,
@@ -10,6 +11,8 @@ import {
   TotalConnections,
 } from "./styles";
 
+import { ThemeColorContext } from "../../context/ThemeContext";
+
 import logoImg from "../../assets/images/logo.svg";
 import landingImg from "../../assets/images/landing.svg";
 
@@ -18,9 +21,23 @@ import giveClassesIcon from "../../assets/images/icons/give-classes.svg";
 import purpleHeartIcon from "../../assets/images/icons/purple-heart.svg";
 
 const Landing: React.FC = () => {
+  const { mode, toggleTheme } = useContext(ThemeColorContext);
+
   return (
     <Container>
       <PageLandingContent id="page-landing-content">
+        <Switch
+          onChange={toggleTheme}
+          checked={mode.title === "dark"}
+          checkedIcon={false}
+          uncheckedIcon={false}
+          height={10}
+          width={40}
+          handleDiameter={20}
+          offColor={mode.colors.secondary}
+          onColor={mode.colors.primary}
+        />
+
         <LogoContainer>
           <img src={logoImg} alt="Logo Proffy" />
           <h2>Sua plataforma de estudos online.</h2>
