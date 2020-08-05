@@ -18,6 +18,14 @@ export const Container = styled.div`
     padding-top: 3.4rem;
     overflow: hidden;
 
+    @media (min-width: 700px) {
+      .schedule-item {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        column-gap: 1.6rem;
+      }
+    }
+
     fieldset {
       border: 0;
       padding: 0 2.4rem;
@@ -37,6 +45,18 @@ export const Container = styled.div`
         width: 100%;
         padding-bottom: 1.6rem;
         border-bottom: 1px solid ${({ theme }) => theme.colors.primaryDarker};
+
+        button {
+          background: none;
+          border: 0;
+          color: ${({ theme }) => theme.colors.primaryDarker};
+          font: 700 1.6rem Archivo;
+          transition: color 0.2s;
+
+          &:hover {
+            color: ${({ theme }) => theme.colors.secondaryDark};
+          }
+        }
       }
     }
     footer {
