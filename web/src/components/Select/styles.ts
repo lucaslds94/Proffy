@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
-export const InputBlock = styled.div`
+export const SelectBlock = styled.div`
   position: relative;
-  margin:2.4rem 0 1.4rem;
+  margin: 2.4rem 0 1.4rem;
 
   label {
     font-size: 1.4rem;
   }
 
-  input {
+  select {
     width: 100%;
     height: 5.6rem;
     margin-top: 0.8rem;
@@ -17,6 +17,7 @@ export const InputBlock = styled.div`
     border: 1px solid ${({ theme }) => theme.colors.lineInWhite};
     outline: 0;
     padding: 0 1.6rem;
+    cursor: pointer;
     font: 1.6rem Archivo;
   }
 

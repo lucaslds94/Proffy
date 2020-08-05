@@ -3,6 +3,8 @@ import PageHeader from "../../components/PageHeader";
 
 import { Container } from "./styles";
 import Input from "../../components/Input";
+import Textarea from "../../components/Textarea";
+import Select from "../../components/Select";
 
 import warningIcon from "../../assets/images/icons/warning.svg";
 
@@ -20,11 +22,37 @@ const TeacherForm: React.FC = () => {
           <Input name="name" label="Nome completo" />
           <Input name="avatar" label="Avatar" />
           <Input name="whatsapp" label="Whatsapp" />
+          <Textarea name="bio" label="Biografia" />
         </fieldset>
 
         <fieldset>
           <legend>Sobre a aula</legend>
-          <Input name="subject" label="Disciplina" />
+          <Select
+            name="subject"
+            label="Disciplina"
+            options={[
+              {
+                value: "Circuitos Polifásicos",
+                label: "Circuitos Polifásicos",
+              },
+              {
+                value: "Circuitos Elétricos I",
+                label: "Circuitos Elétricos I",
+              },
+              { value: "Física III", label: "Física III" },
+              { value: "Cálculo III", label: "Cálculo III" },
+              { value: "Automação Industrial", label: "Automação Industrial" },
+              { value: "Sistemas de Potência", label: "Sistemas de Potência" },
+              {
+                value: "Distribuição de Energia",
+                label: "Distribuição de Energia",
+              },
+              {
+                value: "Lógica de Programação",
+                label: "Lógica de Programação",
+              },
+            ]}
+          />
           <Input name="cost" label="Custo da sua hora/aula" />
         </fieldset>
 
