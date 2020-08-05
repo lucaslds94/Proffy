@@ -78,7 +78,7 @@ export const Footer = styled.footer`
   justify-content: space-between;
 
   p strong {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.textTitle};
     font-size: 1.6rem;
     display: block;
   }

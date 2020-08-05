@@ -19,7 +19,7 @@ export default {
     inputBackground: shade(0.25, "#F8F8FC"),
     buttonText: "#F8F8FC",
     boxBase: "#333",
-    boxFooter: shade(0.25, "#916BEA"),
+    boxFooter: shade(0.55, "#916BEA"),
   },
   fontSizes: {
     default: "1.4rem",
