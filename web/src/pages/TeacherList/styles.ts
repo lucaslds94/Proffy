@@ -9,7 +9,7 @@ export const SearchTeachers = styled.form`
   margin-top: 3.2rem;
 
   label {
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.textInPrimary};
   }
 
   @media (min-width: 700px) {
@@ -34,8 +34,8 @@ export const InputBlock = styled.div`
     height: 5.6rem;
     margin-top: 0.8rem;
     border-radius: 0.8rem;
-    background: ${({ theme }) => theme.colors.white};
-    border: 1px solid ${({ theme }) => theme.colors.white};
+    background: ${({ theme }) => theme.colors.inputBackground};
+    border: 1px solid ${({ theme }) => theme.colors.lineInWhite};
     outline: 0;
     padding: 0 1.6rem;
     font: 1.6rem Archivo;
@@ -61,7 +61,7 @@ export const Main = styled.main`
   margin: 3.2rem auto;
   width: 90%;
 
-   p {
+  p {
     padding: 0 1.6rem;
   }
 

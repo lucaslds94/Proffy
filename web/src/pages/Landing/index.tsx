@@ -35,7 +35,7 @@ const Landing: React.FC = () => {
           width={40}
           handleDiameter={20}
           offColor={mode.colors.secondary}
-          onColor={mode.colors.white}
+          onColor={mode.colors.secondaryDark}
         />
 
         <LogoContainer>

@@ -17,6 +17,7 @@ export default createGlobalStyle`
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x:hidden;
   }
   body, #root {
     min-height: 100vh;

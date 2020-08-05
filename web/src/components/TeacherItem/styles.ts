@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.article`
-  background: ${({ theme }) => theme.colors.backgroundDarker};
-  border: 1px solid #e6e6f0;
+  background: ${({ theme }) => theme.colors.boxBase};
+  border: 2px solid ${({ theme }) => theme.colors.lineInWhite};
   border-radius: 0.8rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   overflow: hidden;
 
   @media (min-width: 700px) {
@@ -70,15 +70,15 @@ export const TeacherItemHeader = styled.header`
 
 export const Footer = styled.footer`
   padding: 3.2rem 2rem;
-  background: ${({theme}) => theme.colors.backgroundDarker};
-  border-top: 1px solid #e6e6f0;
+  background: ${({ theme }) => theme.colors.boxFooter};
+  border-top: 1px solid ${({ theme }) => theme.colors.lineInWhite};
   margin-top: 3.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   p strong {
-    color: ${({ theme }) => theme.colors.textTitle};
+    color: ${({ theme }) => theme.colors.primary};
     font-size: 1.6rem;
     display: block;
   }
@@ -87,7 +87,7 @@ export const Footer = styled.footer`
     width: 20rem;
     height: 5.6rem;
     background: ${({ theme }) => theme.colors.secondary};
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.buttonText};
     border: 0;
     border-radius: 0.8rem;
     font: 700 1.4rem Archivo;

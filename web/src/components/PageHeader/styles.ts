@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Container = styled.header`
   display: flex;
   flex-direction: column;
-  width:100vw;
+  width: 100vw;
 
-  background-color: ${({ theme }) => theme.colors.backgroundHeader};
+  background-color: ${({ theme }) => theme.colors.primary};
 
   @media (min-width: 700px) {
     height: 340px;
@@ -48,7 +48,7 @@ export const HeaderContent = styled.div`
   strong {
     font: 700 3.6rem Archivo;
     line-height: 4.2rem;
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.titleInPrimary};
   }
 
   @media (min-width: 700px) {

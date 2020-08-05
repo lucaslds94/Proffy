@@ -4,20 +4,23 @@ declare module "styled-components" {
   export interface DefaultTheme {
     title: string;
     colors: {
-      primary: string;
+      background: string;
       primaryLighter: string;
       primaryLight: string;
+      primary: string;
       primaryDarker: string;
       secondary: string;
       secondaryDark: string;
-      secondaryDarker: string;
-      textBase: string;
+      titleInPrimary: string;
       textInPrimary: string;
       textTitle: string;
-      background: string;
-      backgroundDarker: string;
-      backgroundHeader: string;
-      white: string;
+      textComplement: string;
+      textBase: string;
+      lineInWhite: string;
+      inputBackground: string;
+      buttonText: string;
+      boxBase: string;
+      boxFooter: string;
     };
     fontSizes: {
       default: string;
