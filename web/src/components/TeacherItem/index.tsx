@@ -1,5 +1,6 @@
 import React from "react";
 
+import api from "../../services/api";
 import { Container, TeacherItemHeader, Footer } from "./styles";
 import whatsappIcon from "../../assets/images/icons/whatsapp.svg";
 
@@ -18,6 +19,12 @@ export interface TeacherItemProps {
 }
 
 const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+  const createNewConnection = () => {
+    api.post("/connections", {
+      user_id: teacher.id,
+    });
+  };
+
   return (
     <Container>
       <TeacherItemHeader>
@@ -36,7 +43,11 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
           Preço/hora
           <strong>R${teacher.cost}</strong>
         </p>
-        <a href={`https://wa.me/${teacher.whatsapp}`}>
+        <a
+          target="_blank"
+          onClick={createNewConnection}
+          href={`https://wa.me/${teacher.whatsapp}`}
+        >
           <img src={whatsappIcon} alt="Ícone whatsapp" />
           Entrar em contato
         </a>
